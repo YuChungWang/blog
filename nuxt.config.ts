@@ -50,6 +50,7 @@ export default defineNuxtConfig({
     resolve('./app/module'),
     updateModule as any
   ],
+  plugins: [{ src: './plugins/vercel.ts', mode: 'client' }],
   css: [
     resolve('./assets/css/main.css')
   ],
